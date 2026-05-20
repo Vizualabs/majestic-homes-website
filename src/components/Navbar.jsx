@@ -33,16 +33,16 @@ export default function Navbar() {
   return (
     <>
       <header className={headerClass}>
-        <nav className="mx-auto flex w-full max-w-[1500px] items-center justify-between px-6 py-4 md:px-12 lg:px-20">
+        <nav className="mx-auto flex w-full max-w-[1500px] items-center justify-between px-5 py-3 sm:px-6 sm:py-4 md:px-12 lg:px-20">
           <Link href="/" className="flex items-center" aria-label="Majestic Homes home">
             <Image
-              src="/assets/logo.png"
+              src={isHome ? "/assets/logo.png" : "/assets/loadingimg.png"}
               alt="Majestic Homes"
               width={180}
               height={36}
               priority
               style={{ height: "auto" }}
-              className="w-36 md:w-44"
+              className="w-28 sm:w-36 md:w-44"
             />
           </Link>
 
@@ -68,7 +68,7 @@ export default function Navbar() {
 
       <aside
         aria-hidden={!isOpen}
-        className={`fixed right-0 top-0 z-40 flex h-full w-full flex-col bg-zinc-950/55 backdrop-blur-md transition-transform duration-300 ease-out sm:w-[560px] md:w-[620px] ${
+        className={`fixed right-0 top-0 z-40 flex h-full w-full flex-col overflow-y-auto bg-zinc-950/55 backdrop-blur-md transition-transform duration-300 ease-out sm:w-[480px] md:w-[560px] lg:w-[620px] ${
           isOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
@@ -76,27 +76,27 @@ export default function Navbar() {
           type="button"
           aria-label="Close menu"
           onClick={closeMenu}
-          className="absolute right-5 top-5 inline-flex h-10 w-10 items-center justify-center rounded-md text-white transition hover:bg-white/10 md:hidden"
+          className="absolute right-4 top-4 inline-flex h-10 w-10 items-center justify-center rounded-md text-white transition hover:bg-white/10 sm:right-5 sm:top-5"
         >
           <CloseIcon />
         </button>
 
-        <nav className="flex flex-1 flex-col justify-center gap-y-10 px-10 pb-14 pt-20 md:gap-y-26 md:px-14 md:pb-16 md:pt-24">
+        <nav className="flex flex-1 flex-col justify-center gap-y-7 px-6 pb-12 pt-20 sm:gap-y-10 sm:px-10 md:gap-y-14 md:px-14 md:pb-16 md:pt-24">
           {navLinks.map((item) => (
             <Link
               key={item.href}
               href={item.href}
               onClick={closeMenu}
-              className="text-center font-serif text-3xl italic text-white transition hover:text-zinc-300 md:text-4xl"
+              className="text-center font-serif text-2xl italic text-white transition hover:text-zinc-300 sm:text-3xl md:text-4xl"
             >
               {item.label}
             </Link>
           ))}
 
           <Link
-            href="/#contact"
+            href="/contact"
             onClick={closeMenu}
-            className="inline-flex w-full items-center justify-center bg-white px-6 py-4 font-serif text-xl italic text-zinc-950 transition hover:bg-zinc-200 md:text-2xl"
+            className="inline-flex w-full items-center justify-center bg-white px-6 py-3 font-serif text-lg italic text-zinc-950 transition hover:bg-zinc-200 sm:py-4 sm:text-xl md:text-2xl"
           >
             Contact us
           </Link>
