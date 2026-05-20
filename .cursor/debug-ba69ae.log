@@ -1,0 +1,67 @@
+{"sessionId":"ba69ae","location":"LoadingScreen.jsx:render","message":"Component render - current phase","data":{"phase":"done"},"hypothesisId":"A","timestamp":1779134469737}
+{"sessionId":"ba69ae","location":"LoadingScreen.jsx:render","message":"Component render - current phase","data":{"phase":"done"},"hypothesisId":"A","timestamp":1779134469638}
+{"sessionId":"ba69ae","location":"LoadingScreen.jsx:render","message":"Component render - current phase","data":{"phase":"done"},"hypothesisId":"A","timestamp":1779134473819}
+{"sessionId":"ba69ae","location":"LoadingScreen.jsx:earlyReturn","message":"Returning null - loading screen hidden","data":{"phase":"done"},"hypothesisId":"A","timestamp":1779134473831}
+{"sessionId":"ba69ae","location":"LoadingScreen.jsx:render","message":"Component render - current phase","data":{"phase":"done"},"hypothesisId":"A","timestamp":1779134473831}
+{"sessionId":"ba69ae","location":"LoadingScreen.jsx:earlyReturn","message":"Returning null - loading screen hidden","data":{"phase":"done"},"hypothesisId":"A","timestamp":1779134474274}
+{"sessionId":"ba69ae","location":"LoadingScreen.jsx:render","message":"Component render - current phase","data":{"phase":"done"},"hypothesisId":"A","timestamp":1779134476602}
+{"sessionId":"ba69ae","location":"LoadingScreen.jsx:earlyReturn","message":"Returning null - loading screen hidden","data":{"phase":"done"},"hypothesisId":"A","timestamp":1779134476603}
+{"sessionId":"ba69ae","location":"LoadingScreen.jsx:render","message":"Component render - current phase","data":{"phase":"done"},"hypothesisId":"A","timestamp":1779134477768}
+{"sessionId":"ba69ae","location":"LoadingScreen.jsx:earlyReturn","message":"Returning null - loading screen hidden","data":{"phase":"done"},"hypothesisId":"A","timestamp":1779134477770}
+{"sessionId":"ba69ae","location":"LoadingScreen.jsx:render","message":"Component render - current phase","data":{"phase":"done"},"hypothesisId":"A","timestamp":1779134487656}
+{"sessionId":"ba69ae","location":"LoadingScreen.jsx:earlyReturn","message":"Returning null - loading screen hidden","data":{"phase":"done"},"hypothesisId":"A","timestamp":1779134487657}
+{"sessionId":"ba69ae","location":"LoadingScreen.jsx:render","message":"Component render - current phase","data":{"phase":"done"},"hypothesisId":"A","timestamp":1779134490861}
+{"sessionId":"ba69ae","location":"LoadingScreen.jsx:earlyReturn","message":"Returning null - loading screen hidden","data":{"phase":"done"},"hypothesisId":"A","timestamp":1779134492345}
+{"sessionId":"ba69ae","location":"LoadingScreen.jsx:render","message":"Component render - current phase","data":{"phase":"idle"},"hypothesisId":"A","timestamp":1779135076172}
+{"sessionId":"ba69ae","location":"LoadingScreen.jsx:earlyReturn","message":"Returning null - loading screen hidden","data":{"phase":"idle"},"hypothesisId":"A","timestamp":1779135076184}
+{"sessionId":"ba69ae","location":"LoadingScreen.jsx:render","message":"Component render - current phase","data":{"phase":"idle"},"hypothesisId":"A","timestamp":1779135082970}
+{"sessionId":"ba69ae","location":"LoadingScreen.jsx:earlyReturn","message":"Returning null - loading screen hidden","data":{"phase":"idle"},"hypothesisId":"A","timestamp":1779135082971}
+{"sessionId":"ba69ae","location":"LoadingScreen.jsx:render","message":"Component render - current phase","data":{"phase":"idle"},"hypothesisId":"A","timestamp":1779135084639}
+{"sessionId":"ba69ae","location":"LoadingScreen.jsx:earlyReturn","message":"Returning null - loading screen hidden","data":{"phase":"idle"},"hypothesisId":"A","timestamp":1779135084639}
+{"sessionId":"ba69ae","location":"LoadingScreen.jsx:render","message":"Component render - current phase","data":{"phase":"idle"},"hypothesisId":"A","timestamp":1779135084640}
+{"sessionId":"ba69ae","location":"LoadingScreen.jsx:earlyReturn","message":"Returning null - loading screen hidden","data":{"phase":"idle"},"hypothesisId":"A","timestamp":1779135084640}
+{"sessionId":"ba69ae","location":"LoadingScreen.jsx:useEffect","message":"useEffect fired - setting phase to visible","data":{"phaseBeforeSet":"idle","timeFromPageLoad":1882.1000000238419},"hypothesisId":"B","timestamp":1779135084680}
+{"sessionId":"ba69ae","location":"LoadingScreen.jsx:render","message":"Component render - current phase","data":{"phase":"visible"},"hypothesisId":"A","timestamp":1779135084681}
+{"sessionId":"ba69ae","location":"LoadingScreen.jsx:render","message":"Component render - current phase","data":{"phase":"visible"},"hypothesisId":"A","timestamp":1779135084683}
+{"sessionId":"ba69ae","location":"LoadingScreen.jsx:t1","message":"Phase sliding - curtain starting","hypothesisId":"B","timestamp":1779135087285}
+{"sessionId":"ba69ae","location":"LoadingScreen.jsx:render","message":"Component render - current phase","data":{"phase":"sliding"},"hypothesisId":"A","timestamp":1779135087286}
+{"sessionId":"ba69ae","location":"LoadingScreen.jsx:render","message":"Component render - current phase","data":{"phase":"sliding"},"hypothesisId":"A","timestamp":1779135087286}
+{"sessionId":"ba69ae","location":"LoadingScreen.jsx:t2","message":"Phase done - component unmounting","hypothesisId":"B","timestamp":1779135087991}
+{"sessionId":"ba69ae","location":"LoadingScreen.jsx:render","message":"Component render - current phase","data":{"phase":"done"},"hypothesisId":"A","timestamp":1779135087991}
+{"sessionId":"ba69ae","location":"LoadingScreen.jsx:earlyReturn","message":"Returning null - loading screen hidden","data":{"phase":"done"},"hypothesisId":"A","timestamp":1779135087992}
+{"sessionId":"ba69ae","location":"LoadingScreen.jsx:render","message":"Component render - current phase","data":{"phase":"done"},"hypothesisId":"A","timestamp":1779135087992}
+{"sessionId":"ba69ae","location":"LoadingScreen.jsx:earlyReturn","message":"Returning null - loading screen hidden","data":{"phase":"done"},"hypothesisId":"A","timestamp":1779135087992}
+{"sessionId":"ba69ae","location":"LoadingScreen.jsx:render","message":"Component render - current phase","data":{"phase":"idle"},"hypothesisId":"A","timestamp":1779135098299}
+{"sessionId":"ba69ae","location":"LoadingScreen.jsx:earlyReturn","message":"Returning null - loading screen hidden","data":{"phase":"idle"},"hypothesisId":"A","timestamp":1779135098300}
+{"sessionId":"ba69ae","location":"LoadingScreen.jsx:render","message":"Component render - current phase","data":{"phase":"idle"},"hypothesisId":"A","timestamp":1779135099342}
+{"sessionId":"ba69ae","location":"LoadingScreen.jsx:earlyReturn","message":"Returning null - loading screen hidden","data":{"phase":"idle"},"hypothesisId":"A","timestamp":1779135099343}
+{"sessionId":"ba69ae","location":"LoadingScreen.jsx:render","message":"Component render - current phase","data":{"phase":"idle"},"hypothesisId":"A","timestamp":1779135099344}
+{"sessionId":"ba69ae","location":"LoadingScreen.jsx:earlyReturn","message":"Returning null - loading screen hidden","data":{"phase":"idle"},"hypothesisId":"A","timestamp":1779135099344}
+{"sessionId":"ba69ae","location":"LoadingScreen.jsx:useEffect","message":"useEffect fired - setting phase to visible","data":{"phaseBeforeSet":"idle","timeFromPageLoad":1229.300000011921},"hypothesisId":"B","timestamp":1779135099375}
+{"sessionId":"ba69ae","location":"LoadingScreen.jsx:render","message":"Component render - current phase","data":{"phase":"visible"},"hypothesisId":"A","timestamp":1779135099378}
+{"sessionId":"ba69ae","location":"LoadingScreen.jsx:render","message":"Component render - current phase","data":{"phase":"visible"},"hypothesisId":"A","timestamp":1779135099379}
+{"sessionId":"ba69ae","location":"LoadingScreen.jsx:t1","message":"Phase sliding - curtain starting","hypothesisId":"B","timestamp":1779135101988}
+{"sessionId":"ba69ae","location":"LoadingScreen.jsx:render","message":"Component render - current phase","data":{"phase":"sliding"},"hypothesisId":"A","timestamp":1779135101989}
+{"sessionId":"ba69ae","location":"LoadingScreen.jsx:render","message":"Component render - current phase","data":{"phase":"sliding"},"hypothesisId":"A","timestamp":1779135101988}
+{"sessionId":"ba69ae","location":"LoadingScreen.jsx:t2","message":"Phase done - component unmounting","hypothesisId":"B","timestamp":1779135102691}
+{"sessionId":"ba69ae","location":"LoadingScreen.jsx:render","message":"Component render - current phase","data":{"phase":"done"},"hypothesisId":"A","timestamp":1779135102692}
+{"sessionId":"ba69ae","location":"LoadingScreen.jsx:earlyReturn","message":"Returning null - loading screen hidden","data":{"phase":"done"},"hypothesisId":"A","timestamp":1779135102692}
+{"sessionId":"ba69ae","location":"LoadingScreen.jsx:render","message":"Component render - current phase","data":{"phase":"done"},"hypothesisId":"A","timestamp":1779135102692}
+{"sessionId":"ba69ae","location":"LoadingScreen.jsx:earlyReturn","message":"Returning null - loading screen hidden","data":{"phase":"done"},"hypothesisId":"A","timestamp":1779135102693}
+{"sessionId":"ba69ae","location":"LoadingScreen.jsx:render","message":"Component render - current phase","data":{"phase":"idle"},"hypothesisId":"A","timestamp":1779135131885}
+{"sessionId":"ba69ae","location":"LoadingScreen.jsx:earlyReturn","message":"Returning null - loading screen hidden","data":{"phase":"idle"},"hypothesisId":"A","timestamp":1779135131885}
+{"sessionId":"ba69ae","location":"LoadingScreen.jsx:render","message":"Component render - current phase","data":{"phase":"idle"},"hypothesisId":"A","timestamp":1779135132723}
+{"sessionId":"ba69ae","location":"LoadingScreen.jsx:earlyReturn","message":"Returning null - loading screen hidden","data":{"phase":"idle"},"hypothesisId":"A","timestamp":1779135132724}
+{"sessionId":"ba69ae","location":"LoadingScreen.jsx:earlyReturn","message":"Returning null - loading screen hidden","data":{"phase":"idle"},"hypothesisId":"A","timestamp":1779135132725}
+{"sessionId":"ba69ae","location":"LoadingScreen.jsx:render","message":"Component render - current phase","data":{"phase":"idle"},"hypothesisId":"A","timestamp":1779135132724}
+{"sessionId":"ba69ae","location":"LoadingScreen.jsx:useEffect","message":"useEffect fired - setting phase to visible","data":{"phaseBeforeSet":"idle","timeFromPageLoad":968.6999999880791},"hypothesisId":"B","timestamp":1779135132755}
+{"sessionId":"ba69ae","location":"LoadingScreen.jsx:render","message":"Component render - current phase","data":{"phase":"visible"},"hypothesisId":"A","timestamp":1779135132756}
+{"sessionId":"ba69ae","location":"LoadingScreen.jsx:render","message":"Component render - current phase","data":{"phase":"visible"},"hypothesisId":"A","timestamp":1779135132756}
+{"sessionId":"ba69ae","location":"LoadingScreen.jsx:t1","message":"Phase sliding - curtain starting","hypothesisId":"B","timestamp":1779135135364}
+{"sessionId":"ba69ae","location":"LoadingScreen.jsx:render","message":"Component render - current phase","data":{"phase":"sliding"},"hypothesisId":"A","timestamp":1779135135365}
+{"sessionId":"ba69ae","location":"LoadingScreen.jsx:render","message":"Component render - current phase","data":{"phase":"sliding"},"hypothesisId":"A","timestamp":1779135135365}
+{"sessionId":"ba69ae","location":"LoadingScreen.jsx:t2","message":"Phase done - component unmounting","hypothesisId":"B","timestamp":1779135136056}
+{"sessionId":"ba69ae","location":"LoadingScreen.jsx:render","message":"Component render - current phase","data":{"phase":"done"},"hypothesisId":"A","timestamp":1779135136057}
+{"sessionId":"ba69ae","location":"LoadingScreen.jsx:earlyReturn","message":"Returning null - loading screen hidden","data":{"phase":"done"},"hypothesisId":"A","timestamp":1779135136057}
+{"sessionId":"ba69ae","location":"LoadingScreen.jsx:render","message":"Component render - current phase","data":{"phase":"done"},"hypothesisId":"A","timestamp":1779135136057}
+{"sessionId":"ba69ae","location":"LoadingScreen.jsx:earlyReturn","message":"Returning null - loading screen hidden","data":{"phase":"done"},"hypothesisId":"A","timestamp":1779135136058}

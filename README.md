@@ -1,6 +1,6 @@
 # 🏛️ Majestic Homes - Architecture & Design Studio
 
-"Crafted with Precision. Defined by Vision."
+Crafted with Precision. Defined by Vision.
 
 Majestic Homes is a premium, minimalist frontend web application designed for a luxury architecture, engineering, and construction firm. True to the brand's philosophy, this platform showcases a sophisticated, high-contrast dark user interface optimized for displaying high-end architectural portfolios, dynamic project breakdowns, and professional structural services.
 

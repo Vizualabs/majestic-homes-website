@@ -5,11 +5,13 @@ import ContactSection from "@/sections/ContactSection";
 
 export default function Home() {
   return (
-    <div className="mx-auto flex w-full max-w-6xl flex-col gap-16 px-6 py-10 md:px-10">
+    <>
       <Hero />
-      <AboutSection />
-      <ProjectsSection />
-      <ContactSection />
-    </div>
+      <div className="mx-auto flex w-full max-w-6xl flex-col gap-16 px-6 py-16 md:px-10">
+        <AboutSection />
+        <ProjectsSection />
+        <ContactSection />
+      </div>
+    </>
   );
 }
