@@ -26,7 +26,7 @@ function Slide1() {
                 05+
               </p>
               <p className="mt-2 font-serif text-base italic text-zinc-200 sm:text-lg md:text-2xl lg:text-4xl">
-                ongoing
+                Ongoing
               </p>
             </div>
             <div className="hero-up d-400 text-white">

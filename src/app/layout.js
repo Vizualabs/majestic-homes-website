@@ -21,6 +21,7 @@ export default function RootLayout({ children }) {
     <html
       lang="en"
       className={`${instrumentSerif.variable} h-full antialiased`}
+      suppressHydrationWarning
     >
       <body
         className="min-h-full flex flex-col bg-zinc-950 text-zinc-100"
