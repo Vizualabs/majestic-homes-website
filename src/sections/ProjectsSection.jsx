@@ -1,25 +1,5 @@
 import ProjectCard from "@/components/ProjectCard";
-
-const featuredProjects = [
-  {
-    id: "modern-villa",
-    title: "Modern Villa",
-    category: "Residential",
-    summary: "A tropical-modern residence focused on natural light and premium finishes.",
-  },
-  {
-    id: "skyline-residences",
-    title: "Skyline Residences",
-    category: "Multi-unit",
-    summary: "Contemporary apartment design with optimized structural and utility planning.",
-  },
-  {
-    id: "courtyard-house",
-    title: "Courtyard House",
-    category: "Custom Build",
-    summary: "Privacy-driven layout balancing climate responsiveness with elegant details.",
-  },
-];
+import { projects as featuredProjects } from "@/data/projects";
 
 export default function ProjectsSection() {
   return (
