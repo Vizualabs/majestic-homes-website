@@ -1,8 +1,12 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 function Slide1() {
   return (
@@ -84,6 +88,8 @@ const slides = [Slide1, Slide2];
 export default function Hero() {
   const [current, setCurrent] = useState(0);
   const [key, setKey] = useState(0);
+  const sectionRef = useRef(null);
+  const bgRef = useRef(null);
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -93,18 +99,45 @@ export default function Hero() {
     return () => clearInterval(timer);
   }, []);
 
+  useEffect(() => {
+    const section = sectionRef.current;
+    const bg = bgRef.current;
+    if (!section || !bg) return;
+
+    const ctx = gsap.context(() => {
+      gsap.to(bg, {
+        scale: 1.12,
+        yPercent: 10,
+        ease: "none",
+        scrollTrigger: {
+          trigger: section,
+          start: "top top",
+          end: "bottom top",
+          scrub: 1.4,
+        },
+      });
+    }, sectionRef);
+
+    return () => ctx.revert();
+  }, []);
+
   const SlideContent = slides[current];
 
   return (
-    <section className="relative isolate flex min-h-screen w-full flex-col overflow-hidden">
-      <Image
-        src="/assets/hero.jpg"
-        alt="Majestic Homes architectural showcase"
-        fill
-        priority
-        sizes="100vw"
-        className="-z-20 object-cover"
-      />
+    <section
+      ref={sectionRef}
+      className="relative isolate flex min-h-screen w-full flex-col overflow-hidden"
+    >
+      <div ref={bgRef} className="absolute inset-0 -z-20 will-change-transform">
+        <Image
+          src="/assets/hero.jpg"
+          alt="Majestic Homes architectural showcase"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover"
+        />
+      </div>
 
       <div className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-40 bg-gradient-to-b from-black/60 via-black/20 to-transparent" />
       <div className="pointer-events-none absolute inset-x-0 bottom-0 -z-10 h-[65%] bg-gradient-to-t from-black/85 via-black/45 to-transparent" />
