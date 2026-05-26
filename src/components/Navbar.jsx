@@ -27,10 +27,11 @@ export default function Navbar() {
 
   const headerClass =
     isHome || isServices
-      ? "absolute inset-x-0 top-0 z-50"
-      : "sticky top-0 z-50 border-b border-zinc-800/80 bg-zinc-950/90 backdrop-blur";
+      ? `absolute inset-x-0 top-0 ${isOpen ? "z-[70]" : "z-50"}`
+      : `sticky top-0 border-b border-zinc-800/80 bg-zinc-950/90 backdrop-blur ${isOpen ? "z-[70]" : "z-50"}`;
 
   const closeMenu = () => setIsOpen(false);
+  const toggleMenu = () => setIsOpen((prev) => !prev);
 
   return (
     <>
@@ -50,12 +51,23 @@ export default function Navbar() {
 
           <button
             type="button"
-            aria-label="Open menu"
+            aria-label={isOpen ? "Close menu" : "Open menu"}
             aria-expanded={isOpen}
-            onClick={() => setIsOpen((prev) => !prev)}
-            className={`inline-flex h-10 w-10 items-center justify-center rounded-md text-white transition hover:bg-white/10 ${isOpen ? "invisible" : "visible"}`}
+            onClick={toggleMenu}
+            className="inline-flex h-10 w-10 items-center justify-center rounded-md text-white transition hover:bg-white/10"
           >
-            <MenuIcon />
+            {isOpen ? (
+              <>
+                <span className="md:hidden">
+                  <CloseIcon />
+                </span>
+                <span className="hidden md:inline-flex">
+                  <MenuIcon />
+                </span>
+              </>
+            ) : (
+              <MenuIcon />
+            )}
           </button>
         </nav>
       </header>
@@ -70,19 +82,10 @@ export default function Navbar() {
 
       <aside
         aria-hidden={!isOpen}
-        className={`fixed right-0 top-0 z-40 flex h-full w-full flex-col overflow-y-auto bg-zinc-950/55 backdrop-blur-md transition-transform duration-300 ease-out sm:w-[480px] md:w-[560px] lg:w-[620px] ${
+        className={`fixed right-0 top-0 z-[60] flex h-full w-full flex-col overflow-y-auto bg-zinc-950/55 backdrop-blur-md transition-transform duration-300 ease-out sm:w-[480px] md:w-[560px] lg:w-[620px] ${
           isOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        <button
-          type="button"
-          aria-label="Close menu"
-          onClick={closeMenu}
-          className="absolute right-4 top-4 inline-flex h-10 w-10 items-center justify-center rounded-md text-white transition hover:bg-white/10 sm:right-5 sm:top-5"
-        >
-          <CloseIcon />
-        </button>
-
         <nav className="flex flex-1 flex-col justify-center gap-y-7 px-6 pb-12 pt-20 sm:gap-y-10 sm:px-10 md:gap-y-14 md:px-14 md:pb-16 md:pt-24">
           {navLinks.map((item) => (
             <Link
