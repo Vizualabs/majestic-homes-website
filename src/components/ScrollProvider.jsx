@@ -33,5 +33,6 @@ export default function ScrollProvider({ children }) {
       ScrollTrigger.getAll().forEach((t) => t.kill());
     };
   }, []);
+  
   return children;
 }

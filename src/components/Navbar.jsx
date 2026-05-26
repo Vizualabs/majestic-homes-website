@@ -16,6 +16,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
   const isHome = pathname === "/";
+  const isServices = pathname === "/services";
 
   useEffect(() => {
     document.body.style.overflow = isOpen ? "hidden" : "";
@@ -24,9 +25,10 @@ export default function Navbar() {
     };
   }, [isOpen]);
 
-  const headerClass = isHome
-    ? "absolute inset-x-0 top-0 z-50"
-    : "sticky top-0 z-50 border-b border-zinc-800/80 bg-zinc-950/90 backdrop-blur";
+  const headerClass =
+    isHome || isServices
+      ? "absolute inset-x-0 top-0 z-50"
+      : "sticky top-0 z-50 border-b border-zinc-800/80 bg-zinc-950/90 backdrop-blur";
 
   const closeMenu = () => setIsOpen(false);
 
