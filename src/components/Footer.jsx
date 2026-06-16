@@ -3,14 +3,14 @@ import Link from "next/link";
 
 const quickLinks = [
   { href: "/", label: "Home" },
-  { href: "/#about", label: "About" },
-  { href: "/#projects", label: "Projects" },
+  { href: "/about", label: "About" },
+  { href: "/projects", label: "Projects" },
   { href: "/services", label: "Services" },
 ];
 
 const discoverLinks = [
-  { href: "/#projects", label: "Ongoing" },
-  { href: "/#projects", label: "Completed" },
+  { href: "/projects", label: "Ongoing" },
+  { href: "/projects", label: "Completed" },
   { href: "/contact", label: "Contact" },
 ];
 
@@ -34,7 +34,7 @@ const socialLinks = [
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-zinc-950 text-zinc-200">
+    <footer className="w-full bg-[#0a0a0a] text-zinc-200">
       <div className="mx-auto w-full max-w-[1500px] px-5 pt-12 pb-6 sm:px-6 sm:pt-16 md:px-12 md:pt-20 lg:px-20">
         <div className="grid gap-12 sm:gap-14 lg:grid-cols-2 lg:gap-20">
           <div>
