@@ -7,8 +7,8 @@ import { usePathname } from "next/navigation";
 
 const navLinks = [
   { href: "/", label: "Home" },
-  { href: "/#about", label: "About" },
-  { href: "/#projects", label: "Projects" },
+  { href: "/about", label: "About" },
+  { href: "/projects", label: "Projects" },
   { href: "/services", label: "Services" },
 ];
 
@@ -16,7 +16,9 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
   const isHome = pathname === "/";
+  const isAbout = pathname === "/about";
   const isServices = pathname === "/services";
+  const isProjects = pathname === "/projects";
 
   useEffect(() => {
     document.body.style.overflow = isOpen ? "hidden" : "";
@@ -26,7 +28,7 @@ export default function Navbar() {
   }, [isOpen]);
 
   const headerClass =
-    isHome || isServices
+    isHome || isAbout || isServices || isProjects
       ? `absolute inset-x-0 top-0 ${isOpen ? "z-[70]" : "z-50"}`
       : `sticky top-0 border-b border-zinc-800/80 bg-zinc-950/90 backdrop-blur ${isOpen ? "z-[70]" : "z-50"}`;
 

@@ -26,7 +26,7 @@ export default async function ProjectDetailsPage({ params }) {
         {project.summary}
       </p>
       <Link
-        href="/#projects"
+        href="/projects"
         className="mt-10 inline-block font-serif text-base italic text-zinc-200 underline-offset-4 hover:text-white hover:underline md:text-xl"
       >
         Back to projects

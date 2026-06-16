@@ -218,7 +218,9 @@ export default function ServicesCarousel() {
     [queueNextSlide, setVisibleSlide]
   );
 
-  goToSlideRef.current = goToSlide;
+  useEffect(() => {
+    goToSlideRef.current = goToSlide;
+  }, [goToSlide]);
 
   useEffect(() => {
     setVisibleSlide(0);
@@ -334,23 +336,23 @@ export default function ServicesCarousel() {
       onTouchMove={handleTouchMove}
       onTouchEnd={handleTouchEnd}
     >
-      <div className="flex min-h-[58vh] flex-col md:grid md:min-h-[68vh] md:grid-cols-2 md:items-stretch">
-        <div className="relative flex min-h-[42vh] flex-1 flex-col bg-[#141111] md:h-full md:min-h-0">
-          <div className="relative min-h-0 flex-1 overflow-hidden md:h-full">
+      <div className="flex min-h-[100svh] flex-col lg:grid lg:min-h-screen lg:grid-cols-2 lg:items-stretch">
+        <div className="relative flex min-h-[48svh] flex-1 flex-col bg-[#141111] sm:min-h-[46svh] md:min-h-[44svh] lg:h-full lg:min-h-0">
+          <div className="relative min-h-0 flex-1 overflow-hidden lg:h-full">
             {serviceSlides.map((item, i) => (
               <div
                 key={item.id}
                 ref={(el) => {
                   textRefs.current[i] = el;
                 }}
-                className="absolute inset-0 flex flex-col justify-end px-8 pb-8 pt-16 will-change-transform sm:px-12 sm:pb-10 sm:pt-20 md:px-16 md:pb-12 md:pt-24 lg:px-20 lg:pb-14 lg:pt-28"
+                className="absolute inset-0 flex flex-col justify-center px-5 py-10 will-change-transform min-[380px]:px-6 sm:px-10 sm:py-14 md:px-14 md:py-18 lg:px-16 lg:py-24 xl:px-20 xl:py-28"
                 style={{ opacity: i === 0 ? 1 : 0 }}
               >
-                <div className="max-w-xl">
-                  <h2 className="font-serif text-4xl italic leading-tight sm:text-5xl md:text-6xl lg:text-7xl">
+                <div className="w-full max-w-2xl lg:max-w-xl">
+                  <h2 className="max-w-full text-balance font-serif text-[clamp(2.25rem,13vw,3.75rem)] font-normal italic leading-[1.04] sm:text-[clamp(3.25rem,7vw,5rem)] lg:text-[clamp(3.5rem,4.8vw,5.5rem)]">
                     {item.title}
                   </h2>
-                  <p className="mt-8 font-serif text-lg italic leading-relaxed text-zinc-100 sm:text-xl md:text-2xl lg:text-3xl">
+                  <p className="mt-4 max-w-[34rem] text-pretty font-serif text-base font-normal italic leading-relaxed text-zinc-100 min-[380px]:text-lg sm:mt-6 sm:text-xl md:mt-8 md:text-2xl lg:text-[clamp(1.35rem,2vw,1.875rem)]">
                     {item.quote}
                   </p>
                   <ContactButton href="/contact">Contact us</ContactButton>
@@ -362,7 +364,7 @@ export default function ServicesCarousel() {
 
         <div
           ref={imageColumnRef}
-          className="relative min-h-[42vh] flex-1 overflow-hidden md:h-full md:min-h-0"
+          className="relative min-h-[52svh] flex-1 overflow-hidden sm:min-h-[54svh] md:min-h-[56svh] lg:h-full lg:min-h-0"
         >
           {serviceSlides.map((item, i) => (
             <div
@@ -375,13 +377,13 @@ export default function ServicesCarousel() {
             >
               <div
                 data-magnetic-inner
-                className="absolute inset-0 scale-[1.08] will-change-transform"
+                className="absolute inset-0 scale-[1.03] will-change-transform sm:scale-[1.06] lg:scale-[1.08]"
               >
                 <Image
                   src={item.image}
                   alt={item.title}
                   fill
-                  sizes="(max-width: 768px) 100vw, 50vw"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
                   className="object-cover"
                   priority={i === 0}
                 />
@@ -398,7 +400,7 @@ function ContactButton({ href, children }) {
   return (
     <Link
       href={href}
-      className="group relative mt-12 inline-flex overflow-hidden bg-white px-10 py-4 font-serif text-lg italic text-black md:text-xl"
+      className="group relative mt-6 inline-flex w-fit overflow-hidden bg-white px-6 py-3 font-serif text-base font-normal italic text-black min-[380px]:px-7 min-[380px]:py-3.5 sm:mt-8 sm:px-8 sm:py-4 sm:text-lg md:text-xl lg:mt-12"
     >
       <span
         aria-hidden
