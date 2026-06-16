@@ -3,14 +3,14 @@ import Link from "next/link";
 
 const quickLinks = [
   { href: "/", label: "Home" },
-  { href: "/#about", label: "About" },
-  { href: "/#projects", label: "Projects" },
+  { href: "/about", label: "About" },
+  { href: "/projects", label: "Projects" },
   { href: "/services", label: "Services" },
 ];
 
 const discoverLinks = [
-  { href: "/#projects", label: "Ongoing" },
-  { href: "/#projects", label: "Completed" },
+  { href: "/projects", label: "Ongoing" },
+  { href: "/projects", label: "Completed" },
   { href: "/contact", label: "Contact" },
 ];
 

@@ -1,30 +1,37 @@
 export const serviceSlides = [
   {
-    id: "house-planning",
-    title: "House Planning",
+    id: "pre-built-homes",
+    title: "Pre-Built Homes",
     quote:
-      "A home is not a structure. It is the physical expression of how you choose to live.",
+      "Ready-made homes designed with care, built with quality, and prepared for a smoother path to ownership.",
     image: "/assets/Service1.png",
   },
   {
-    id: "construction",
-    title: "Construction",
+    id: "custom-built-homes",
+    title: "Custom Built Homes",
     quote:
-      "The distance between a great design and a great building is execution. We close that gap.",
+      "Homes shaped around your lifestyle, your land, and the details that make each space feel truly personal.",
     image: "/assets/Service2.jpg",
   },
   {
-    id: "boq",
-    title: "Bill of Quantities (BOQ)",
+    id: "design-services",
+    title: "Design Services",
     quote:
-      "The distance between a great design and a great building is execution. We close that gap.",
+      "Thoughtful planning and creative design that turn early ideas into clear, practical, and beautiful living spaces.",
     image: "/assets/Service3.jpg",
   },
   {
-    id: "3d-visualization",
-    title: "3D Visualization",
+    id: "quantity-surveying",
+    title: "Quantity Surveying",
     quote:
-      "The distance between a great design and a great building is execution. We close that gap.",
+      "Detailed cost planning and material estimates that help every decision stay transparent, measured, and controlled.",
     image: "/assets/Service2.jpg",
+  },
+  {
+    id: "project-management",
+    title: "Project Management",
+    quote:
+      "Complete coordination from start to finish, keeping your build organized, on schedule, and aligned with the vision.",
+    image: "/assets/Service1.png",
   },
 ];
