@@ -50,8 +50,9 @@ export default function AboutVisionMission() {
               </p>
 
               <a
-                href="/assets/dp.jpg"
-                download
+                href="/assets/QS-Mahesh%20Perera-2026.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="mt-10 inline-flex bg-zinc-950 px-8 py-4 text-2xl italic leading-none text-white transition hover:bg-zinc-800"
               >
                 Download Cv
