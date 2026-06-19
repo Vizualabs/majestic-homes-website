@@ -20,7 +20,7 @@ export default function ProjectsSection() {
 
   return (
     <section id="projects" className="w-full bg-white text-zinc-950">
-      <div className="mx-auto w-full max-w-[1500px] py-16 md:py-24">
+      <div className="w-full pt-16 md:pt-24">
         <div className="flex justify-center gap-8 px-5 sm:gap-16 md:gap-24">
           {filters.map((filter) => {
             const isActive = activeFilter === filter.value;

@@ -1,18 +1,7 @@
-import Image from "next/image";
 import Link from "next/link";
+import ProjectGallery from "@/components/ProjectGallery";
 import { notFound } from "next/navigation";
 import { getProjectById, projects } from "@/data/projects";
-
-const galleryPattern = [
-  "md:col-span-3 md:row-span-2",
-  "md:col-span-3",
-  "md:col-span-2",
-  "md:col-span-2",
-  "md:col-span-2 md:row-span-2",
-  "md:col-span-6 md:row-span-2",
-  "md:col-span-3",
-  "md:col-span-3",
-];
 
 export function generateStaticParams() {
   return projects.map((project) => ({ id: project.id }));
@@ -50,27 +39,7 @@ export default async function ProjectDetailsPage({ params }) {
           </p>
         </div>
 
-        <div className="grid auto-rows-[180px] grid-cols-1 gap-2 sm:auto-rows-[240px] md:grid-cols-6 md:auto-rows-[210px] lg:auto-rows-[260px]">
-          {project.images.map((image, index) => (
-            <div
-              key={image}
-              className={`relative overflow-hidden bg-zinc-900 ${
-                galleryPattern[index % galleryPattern.length]
-              }`}
-              style={{ contentVisibility: "auto", containIntrinsicSize: "520px 320px" }}
-            >
-              <Image
-                src={image}
-                alt={`${project.title} image ${index + 1}`}
-                fill
-                priority={index === 0}
-                quality={66}
-                sizes="(min-width: 1024px) 50vw, (min-width: 768px) 50vw, 100vw"
-                className="object-cover"
-              />
-            </div>
-          ))}
-        </div>
+        <ProjectGallery images={project.images} title={project.title} />
 
         <div className="mt-12 flex flex-wrap items-end justify-between gap-8 border-t border-white/15 pt-8">
           <div>

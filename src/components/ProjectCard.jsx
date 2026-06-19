@@ -21,9 +21,9 @@ export default function ProjectCard({
         alt={title}
         fill
         priority={priority}
-        quality={64}
+        quality={54}
         sizes="(min-width: 1024px) 34vw, (min-width: 640px) 50vw, 100vw"
-        className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+        className="object-cover"
       />
       <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/10 to-transparent opacity-0 transition duration-300 group-hover:opacity-100" />
       <div className="absolute bottom-0 left-0 right-0 translate-y-3 p-5 opacity-0 transition duration-300 group-hover:translate-y-0 group-hover:opacity-100">

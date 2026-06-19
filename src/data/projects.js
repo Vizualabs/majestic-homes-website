@@ -27,9 +27,6 @@ export const projects = [
       "/completed/PR01/MH_17.webp",
       "/completed/PR01/MH_18.webp",
       "/completed/PR01/MH_19.webp",
-      "/completed/PR01/MH_20.webp",
-      "/completed/PR01/MH_21.webp",
-      "/completed/PR01/MH_22.webp",
     ],
   },
   {
@@ -55,8 +52,6 @@ export const projects = [
       "/completed/PR02/MH_4_12.webp",
       "/completed/PR02/MH_4_13.webp",
       "/completed/PR02/MH_4_14.webp",
-      "/completed/PR02/MH_4_15.webp",
-      "/completed/PR02/MH_4_16.webp",
     ],
   },
   {
@@ -87,9 +82,6 @@ export const projects = [
       "/completed/PR03/MH_Wetara-17.webp",
       "/completed/PR03/MH_Wetara-18.webp",
       "/completed/PR03/MH_Wetara-19.webp",
-      "/completed/PR03/MH_Wetara-20.webp",
-      "/completed/PR03/MH_Wetara-21.webp",
-      "/completed/PR03/MH_Wetara-22.webp",
     ],
   },
   {
@@ -99,22 +91,13 @@ export const projects = [
     category: "Completed",
     description:
       "A completed family residence focused on garden connection, shaded thresholds, and compact planning. The project frames daily life through layered exterior spaces and carefully detailed residential moments.",
-    cover: "/completed/PR04/4-2.webp",
+    cover: "/completed/PR04/1.webp",
     images: [
-      "/completed/PR04/4-2.webp",
+      "/completed/PR04/1.webp",
+      "/completed/PR04/2.webp",
+      "/completed/PR04/3.webp",
+      "/completed/PR04/4.webp",
       "/completed/PR04/5.webp",
-      "/completed/PR04/6.webp",
-      "/completed/PR04/7.webp",
-      "/completed/PR04/8.webp",
-      "/completed/PR04/9.webp",
-      "/completed/PR04/10.webp",
-      "/completed/PR04/11.webp",
-      "/completed/PR04/12.webp",
-      "/completed/PR04/13.webp",
-      "/completed/PR04/14.webp",
-      "/completed/PR04/15.webp",
-      "/completed/PR04/16.webp",
-      "/completed/PR04/17.webp",
     ],
   },
   {
@@ -124,8 +107,9 @@ export const projects = [
     category: "Completed",
     description:
       "A finished home with a measured modern character, soft night lighting, and an emphasis on practical family spaces. Its image set documents the project through exterior views, interior finishes, and lived-in architectural details.",
-    cover: "/completed/PR05/MH_B2.webp",
+    cover: "/completed/PR05/MH_B1.webp",
     images: [
+      "/completed/PR05/MH_B1.webp",
       "/completed/PR05/MH_B2.webp",
       "/completed/PR05/MH_B3.webp",
       "/completed/PR05/MH_B4.webp",
@@ -134,12 +118,6 @@ export const projects = [
       "/completed/PR05/MH_B7.webp",
       "/completed/PR05/MH_B8.webp",
       "/completed/PR05/MH_B9.webp",
-      "/completed/PR05/MH_B10.webp",
-      "/completed/PR05/MH_B11.webp",
-      "/completed/PR05/MH_B12.webp",
-      "/completed/PR05/MH_B13.webp",
-      "/completed/PR05/MH_B14.webp",
-      "/completed/PR05/MH_B15.webp",
     ],
   },
   {
@@ -166,7 +144,6 @@ export const projects = [
       "/ongoing_pr/1_Perera_Kahathuduwa/13.webp",
       "/ongoing_pr/1_Perera_Kahathuduwa/14.webp",
       "/ongoing_pr/1_Perera_Kahathuduwa/15.webp",
-      "/ongoing_pr/1_Perera_Kahathuduwa/16.webp",
     ],
   },
   {
@@ -176,11 +153,8 @@ export const projects = [
     category: "Ongoing",
     description:
       "An ongoing home in Kesbewa with a focus on disciplined construction progress and refined residential proportions. The project images show the evolving relationship between structure, enclosure, and exterior form.",
-    cover: "/ongoing_pr/2_Perera_Kesbewa/1.webp",
+    cover: "/ongoing_pr/2_Perera_Kesbewa/4.webp",
     images: [
-      "/ongoing_pr/2_Perera_Kesbewa/1.webp",
-      "/ongoing_pr/2_Perera_Kesbewa/2.webp",
-      "/ongoing_pr/2_Perera_Kesbewa/3.webp",
       "/ongoing_pr/2_Perera_Kesbewa/4.webp",
       "/ongoing_pr/2_Perera_Kesbewa/5.webp",
       "/ongoing_pr/2_Perera_Kesbewa/6.webp",
@@ -189,7 +163,6 @@ export const projects = [
       "/ongoing_pr/2_Perera_Kesbewa/9.webp",
       "/ongoing_pr/2_Perera_Kesbewa/10.webp",
       "/ongoing_pr/2_Perera_Kesbewa/11.webp",
-      "/ongoing_pr/2_Perera_Kesbewa/12.webp",
       "/ongoing_pr/2_Perera_Kesbewa/13.webp",
       "/ongoing_pr/2_Perera_Kesbewa/14.webp",
       "/ongoing_pr/2_Perera_Kesbewa/15.webp",
@@ -243,4 +216,3 @@ export const projects = [
 export function getProjectById(id) {
   return projects.find((project) => project.id === id);
 }
-
