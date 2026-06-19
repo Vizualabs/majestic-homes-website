@@ -4,11 +4,18 @@ import { useEffect } from "react";
 import Lenis from "lenis";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { usePathname } from "next/navigation";
 
 gsap.registerPlugin(ScrollTrigger);
 
 export default function ScrollProvider({ children }) {
+  const pathname = usePathname();
+
   useEffect(() => {
+    if (pathname.startsWith("/projects")) {
+      return;
+    }
+
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
       return;
     }
@@ -32,7 +39,7 @@ export default function ScrollProvider({ children }) {
       lenis.destroy();
       ScrollTrigger.getAll().forEach((t) => t.kill());
     };
-  }, []);
+  }, [pathname]);
   
   return children;
 }

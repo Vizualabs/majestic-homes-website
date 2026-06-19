@@ -56,7 +56,7 @@ export default function Navbar() {
             aria-label={isOpen ? "Close menu" : "Open menu"}
             aria-expanded={isOpen}
             onClick={toggleMenu}
-            className="inline-flex h-10 w-10 items-center justify-center rounded-md text-white transition hover:bg-white/10"
+            className="inline-flex h-11 w-11 items-center justify-center rounded-md text-white transition hover:bg-white/10"
           >
             {isOpen ? (
               <>
@@ -64,11 +64,11 @@ export default function Navbar() {
                   <CloseIcon />
                 </span>
                 <span className="hidden md:inline-flex">
-                  <MenuIcon />
+                  <MenuIconImage />
                 </span>
               </>
             ) : (
-              <MenuIcon />
+              <MenuIconImage />
             )}
           </button>
         </nav>
@@ -113,19 +113,16 @@ export default function Navbar() {
   );
 }
 
-function MenuIcon() {
+function MenuIconImage() {
   return (
-    <svg
-      width="26"
-      height="26"
-      viewBox="0 0 24 24"
-      fill="currentColor"
+    <Image
+      src="/assets/text-align.png"
+      alt=""
+      width={32}
+      height={32}
       aria-hidden="true"
-    >
-      <rect x="4" y="6" width="16" height="2.25" rx="1" />
-      <rect x="4" y="11" width="16" height="2.25" rx="1" />
-      <rect x="4" y="16" width="16" height="2.25" rx="1" />
-    </svg>
+      className="h-8 w-8 object-contain"
+    />
   );
 }
 
